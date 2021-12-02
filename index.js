@@ -15,7 +15,7 @@ document.getElementById("btnSearch").addEventListener("click", function(){
     }
     document.getElementById("div").innerHTML=pelis;
     }).catch(function() {
-    console.log("problem!");
+    //console.log("problem!");
     });
 });
 
@@ -29,8 +29,9 @@ document.getElementById("btnLogin").addEventListener("click", function(){
 
     datosEnvio.append('pwd', p);
 
-    fetch(`./login.php`, {
-
+    fetch(`http://localhost/moviequiz-grup-6/login.php`, {
+        //fetch(`https://labs.inspedralbes.cat/~aperezh/login2.php`
+    //la d verdad, la real  (xampp)
         method: 'POST',
 
         body: datosEnvio
@@ -43,7 +44,7 @@ document.getElementById("btnLogin").addEventListener("click", function(){
 
         console.log(data);
         if(data.exito==false){
-            alert("ERROR!");
+            alert("Usuari o contrasenya incorrecta");
         }else{
             document.getElementById("divSearch").style.display="block";
             document.getElementById("divLogin").style.display="none";
