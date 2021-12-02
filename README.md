@@ -2,7 +2,7 @@
 
  
 ## Nom del grup:Grup 6
-## Integrants: Jordi/Valeria/Enrique 
+## Integrants: Valeria/Enrique 
 ## Objectiu: Crear una pàgina web on l'usuari pugui afegir a la pagina web una peli desde omdb i al afegir, comenti i puntuï la peli,després d'això que pugui fer una enquesta sobre la data en la que van sortir 5 pelis que formin part de la pagina. 
 ## Estat: Per començar
 
