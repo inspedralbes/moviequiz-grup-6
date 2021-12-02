@@ -2,18 +2,18 @@
 # transversals
 Esquema mínim de carpetes pels projectes transversals
  
-Nom del grup:Grup 6
-Integrants: Jordi/Valeria/Enrique 
-Objectiu: Crear una pàgina web on l'usuari pugui afegir a la pagina web una peli desde omdb i al afegir, comenti i puntuï la peli,després d'això que pugui fer una enquesta sobre la data en la que van sortir 5 pelis que formin part de la pagina. 
-Estat: Per començar
+##Nom del grup:Grup 6
+##Integrants: Jordi/Valeria/Enrique 
+##Objectiu: Crear una pàgina web on l'usuari pugui afegir a la pagina web una peli desde omdb i al afegir, comenti i puntuï la peli,després d'això que pugui fer una enquesta sobre ##la data en la que van sortir 5 pelis que formin part de la pagina. 
+##Estat: Per començar
 
-FUNCIONALITATS
--Hacer el esquema de la página X
--Hacer BD(taula intermitja puntuació entre usuario y peli)X
--Login X
--Mostrar pelis que tenim
--Obtenir(guardar-les a la bd) pelis(amb omdb) 
--Afegir puntuació i comentaris 
--Veure fitxa peli(puntuació mitja y comentaris)
--Veure les últimes pel·lícules afegides
--Joc amb 5 preguntes
+#FUNCIONALITATS
+##-Hacer el esquema de la página X
+##-Hacer BD(taula intermitja puntuació entre usuario y peli)X
+##-Login X
+##-Mostrar pelis que tenim
+##-Obtenir(guardar-les a la bd) pelis(amb omdb) 
+##-Afegir puntuació i comentaris 
+##-Veure fitxa peli(puntuació mitja y comentaris)
+##-Veure les últimes pel·lícules afegides
+##-Joc amb 5 preguntes
