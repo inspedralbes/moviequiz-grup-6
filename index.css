@@ -1,3 +1,12 @@
 .oculto{
     display: none;
 }
+
+.titol{
+    text-align: center;
+    font-size: 4rem;
+}
+
+img{
+    width: 100px;
+}

@@ -12,7 +12,7 @@ if (($user == "user")  && ($pwd == "1234")) {
 
         session_start();
 
-        $arr = array ('exito'=>true,'nombre'=>"Alvaro Perez",'imagen'=>'https://randomuser.me/api/portraits/men/23.jpg'); ;    
+        $arr = array ('exito'=>true,'nombre'=>"Valeria Zavaleta",'imagen'=>'https://randomuser.me/api/portraits/men/23.jpg'); ;    
 
 } 
 

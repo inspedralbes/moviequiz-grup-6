@@ -8,12 +8,12 @@ document.getElementById("btnSearch").addEventListener("click", function(){
     let pelis = "";
     for(i=0; i<10; i++){
         datos = data.Search[i];
-        pelis += `<div>
-                <h2>${datos.Title}</h2>
-                <img src="${datos.Poster}"></img>
-                </div>`;
+        pelis += `<div class="col s3">
+                    <h2>${datos.Title}</h2>
+                    <img src="${datos.Poster}"></img>
+                 </div>`;
     }
-    document.getElementById("div").innerHTML=pelis;
+    document.getElementById("items").innerHTML=pelis;
     }).catch(function() {
     //console.log("problem!");
     });
@@ -31,7 +31,7 @@ document.getElementById("btnLogin").addEventListener("click", function(){
 
     fetch(`http://localhost/moviequiz-grup-6/login.php`, {
         //fetch(`https://labs.inspedralbes.cat/~aperezh/login2.php`
-    //la d verdad, la real  (xampp)
+        //(xampp)
         method: 'POST',
 
         body: datosEnvio
