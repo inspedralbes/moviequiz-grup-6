@@ -13,7 +13,7 @@ document.getElementById("btnSearch").addEventListener("click", function(){
                 <img src="${datos.Poster}"></img>
                 </div>`;
     }
-    document.getElementById("div").innerHTML=pelis;
+    document.getElementById("resultado").innerHTML=pelis;
     }).catch(function() {
     //console.log("problem!");
     });
@@ -30,8 +30,7 @@ document.getElementById("btnLogin").addEventListener("click", function(){
     datosEnvio.append('pwd', p);
 
     fetch(`http://localhost/moviequiz-grup-6/login.php`, {
-        //fetch(`https://labs.inspedralbes.cat/~aperezh/login2.php`
-//la d verdad, la real :)
+        
         method: 'POST',
 
         body: datosEnvio
