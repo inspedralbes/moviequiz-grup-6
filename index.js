@@ -8,9 +8,14 @@ document.getElementById("btnSearch").addEventListener("click", function(){
     let pelis = "";
     for(i=0; i<10; i++){
         datos = data.Search[i];
-        pelis += `<div class="col s3">
-                    <h2>${datos.Title}</h2>
-                    <img src="${datos.Poster}"></img>
+        pelis += `<div class="col s3 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="${datos.Poster}" class="style_img">
+                            <span class="card-title">${datos.Title}</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">+</i></a>
+                        </div>
+                    </div>
                  </div>`;
     }
     document.getElementById("items").innerHTML=pelis;
