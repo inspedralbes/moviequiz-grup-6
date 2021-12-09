@@ -8,7 +8,7 @@ document.getElementById("btnSearch").addEventListener("click", function(){
     let pelis = "";
     for(i=0; i<10; i++){
         datos = data.Search[i];
-        pelis += `<div class="col s3 m6 l3">
+        pelis += `<div class="col s12 m6 l3">
                     <div class="card">
                         <div class="card-image">
                             <img src="${datos.Poster}" class="style_img">
