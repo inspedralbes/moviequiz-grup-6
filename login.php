@@ -26,4 +26,4 @@ $myJSON = json_encode($arr);
 
 echo $myJSON;
 
-?>
+?>*/
