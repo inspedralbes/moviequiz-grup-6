@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="shortcut icon" href="moviehub.ico"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s9">
+                <!-- <img src="/img/logomoviehub.png" alt="moviehub" id="logo"> -->
+               <h1>Movie quiz</h1> 
+            </div>
+            <div id="divLogin" class="col s3">
+                <label for="username">Usuari</label>
+                <input type="text" id="username" name="text" value="">
+                <label for="username">Contrasenya</label>
+                <input type="password" id="pwd" name="text" value="">
+                <button id="btnLogin" class="waves-effect waves-light btn">Entra</button>
+                <button id="btnResgistre" class="waves-effect waves-teal btn-flat">Registra't</button>
+            </div>        
+
+            <div id="divSearch" class="col s3"> 
+                <!-- class="oculto1" -->
+                <label for="nompeli">Escriu el nom de la pel·licula que vulguis trobar: </label><br><br>
+                <input type="text" id="search" name="text" value="">
+                <button id="btnSearch" class="waves-effect waves-light btn">Buscar</button>
+            </div>
+        
+            <div id="items" class="col s12">
+            
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
