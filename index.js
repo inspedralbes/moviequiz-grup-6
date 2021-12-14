@@ -13,7 +13,8 @@ document.getElementById("btnSearch").addEventListener("click", function(){
                         <div class="card-image">
                             <img src="${datos.Poster}" class="style_img">
                             <span class="card-title">${datos.Title}</span>
-                            <a id="btn-modal" class="btn-floating halfway-fab waves-effect waves-light red" href="#modal${i}"><i class="material-icons">+</i></a>
+                           
+                            <a id="btn-modal" class="btn-floating halfway-fab  waves-effect waves-light red  modal-trigger" href="#modal${i}"><i class="material-icons">+</i></a>
                         </div>
                     </div>
                     <div id="modal${i}" class="modal">
@@ -23,7 +24,7 @@ document.getElementById("btnSearch").addEventListener("click", function(){
                             <div>
                                 <label>
                                     <input type="checkbox" id="fav" name="fav"/>
-                                    <span>Marcar com favorit</span>
+                                    <span>Marcar com favorit <3</span>
                                 </label>
                             </div>
                             <div id="formValue">
@@ -65,6 +66,7 @@ document.getElementById("btnSearch").addEventListener("click", function(){
                  </div>`;
     }
     document.getElementById("items").innerHTML=pelis;
+
         var elems = document.querySelectorAll('.modal');
         var instances = M.Modal.init(elems,{});
     }).catch(function() {
