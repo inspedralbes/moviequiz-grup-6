@@ -1,4 +1,4 @@
-$('·registrar').click(function(){
+$('#registrar').click(function(){
     var username = $('#usuarioreg').val();
     var password = $('#passreg').val();
     var confirmpassword = $('#confirmpassreg').val();

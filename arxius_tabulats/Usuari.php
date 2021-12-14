@@ -7,7 +7,7 @@
         }
     }
 
-    public function registrar ($username, $password){
+    public function registrar ($username,$password){
         $this->query = "INSERT INTO usuari (nom, contrasena) VALUES ('$username', '$password')";
         $this->execute_single_query();
 

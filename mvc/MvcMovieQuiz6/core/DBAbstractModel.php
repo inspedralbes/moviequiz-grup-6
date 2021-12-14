@@ -3,12 +3,8 @@
 
 abstract class DBAbstractModel {
  
- /* private static $db_host = "localhost";
-  private static $db_user = "tgo";
-  private static $db_pass = "tgo";
-*/
   private static $db_host = "localhost";
-  private static $db_user = "";
+  private static $db_user = "root";
   private static $db_pass = "";
  
 
@@ -20,6 +16,11 @@ abstract class DBAbstractModel {
 
   private $conn;
 
+  abstract protected function selectAll();
+  abstract protected function select();
+  abstract protected function insert();
+  abstract protected function update();
+  abstract protected function delete();
 
   private function open_connection() {
     $this->conn = new mysqli (self::$db_host, self::$db_user, self::$db_pass, $this->db_name);
