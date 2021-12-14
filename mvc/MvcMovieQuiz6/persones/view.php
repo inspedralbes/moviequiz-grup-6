@@ -50,7 +50,7 @@ public function retornar_vista ($vista, $dades=array(), $message="Benvingut a la
 	
 	 
 	if ($vista=='inici' || ($vista=='view_select' && count($dades)==0) || $vista=='view_insert')
-		$vista='form_select';
+		$vista='form_login';
 
 	if ($vista=='form_select' || $vista=='form_insert') {
 		
