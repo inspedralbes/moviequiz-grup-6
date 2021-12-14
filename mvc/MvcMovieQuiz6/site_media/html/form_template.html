@@ -16,22 +16,23 @@
 			<div class="col s9">
 				<!-- <img src="/img/logomoviehub.png" alt="moviehub" id="logo"> -->
 				<h1>Movie quiz</h1>
+				<form action="{action}" method="POST">
+					{formbody}
+					<div><input type="submit" id="{butaction}" value="Login"></div>
+				</form>
 			</div>
-
+			
 			<div id="divSearch" class="col s3">
 				<!-- class="oculto1" -->
 				<label for="nompeli">Escriu el nom de la pel·licula que vulguis trobar: </label><br><br>
 				<input type="text" id="search" name="text" value="">
 				<button id="btnSearch" class="waves-effect waves-light btn">Buscar</button>
 			</div>
-
+			
 			<div id="items" class="col s12">
 				
 			</div>
-			<form action="{action}" method="POST">
-				{formbody}
-				<div><input type="submit" id="{butaction}" value="Login"></div>
-			</form>
+			
 		</div>
 	</div>
 

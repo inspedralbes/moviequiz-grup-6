@@ -11,13 +11,13 @@ document.getElementById("btnSearch").addEventListener("click", function(){
         pelis += `<div class="col s12 m6 l3">
                     <div class="card">
                         <div class="card-image">
-                            <img src="${datos.Poster}" class="style_img">
+                            <img src="${datos.Poster}" class="style_img z-depth-5">
                             <span class="card-title">${datos.Title}</span>
                            
-                            <a id="btn-modal" class="btn-floating halfway-fab  waves-effect waves-light red  modal-trigger" href="#modal${i}"><i class="material-icons">+</i></a>
+                            <a id="btn-modal" class="btn-floating halfway-fab  waves-effect waves-light blue  modal-trigger" href="#modal${i}"><i class="material-icons">+</i></a>
                         </div>
                     </div>
-                    <div id="modal${i}" class="modal">
+                    <div id="modal${i}" class="modal bottom-sheet">
                         <div class="modal-content">
                             <h4 class="center-align cyan-text text-darken-3">${datos.Title} (${datos.Year})</h4>
                             </br>
