@@ -1,3 +1,7 @@
+body{
+    background-color: rgba(251, 134, 104, 0.733);
+}
+
 .oculto{
     display: none;
 }
