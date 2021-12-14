@@ -56,7 +56,9 @@ class controller {
         case 'form_insert':
           $view->retornar_vista($event,array());
           break;
-          
+
+      case 'inici':
+        $view->retornar_vista($event, array());
         
               
         }

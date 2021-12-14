@@ -3,7 +3,8 @@
 class view {
   
   private $diccionari = array (
-    'subtitle' => array ('view1' => 'Mostrar dades nom i edat',
+    'subtitle' => array ('inici' => 'Buscar persona',
+                         'view1' => 'Mostrar dades nom i edat',
                          'view2' => 'Mostrar dades nom i alcada',
                          'view_select' => 'Dades persona',
                          'form_select' => 'Buscar persona',
@@ -48,7 +49,7 @@ public function retornar_vista ($vista, $dades=array(), $message="Benvingut a la
 	}
 	
 	 
-	if ( ($vista=='view_select' && count($dades)==0) || $vista=='view_insert')
+	if ($vista=='inici' || ($vista=='view_select' && count($dades)==0) || $vista=='view_insert')
 		$vista='form_select';
 
 	if ($vista=='form_select' || $vista=='form_insert') {
