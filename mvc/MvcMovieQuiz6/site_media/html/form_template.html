@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>{subtitle}</title>
 	<!-- <link rel="shortcut icon" href="moviehub.ico"> -->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -24,16 +24,15 @@
 				<button id="btnSearch" class="waves-effect waves-light btn">Buscar</button>
 			</div>
 
-			<div id="items" class="col s12">
-				<form action="{action}" method="POST">
-					{formbody}
-					<div><input type="submit" id="{butaction}" value="Registrar"></div>
-				</form>
-			</div>
+		<div id="items" class="col s12">
+			<form action="{action}" method="POST">
+				{formbody}
+				<div><input type="submit" id="{butaction}" value="Login"></div>
+			</form>
 		</div>
 	</div>
 
-	<script src="../../../../index.js"></script>
+<script src="../../../../index.js"></script>
 </body>
 </html>
 
