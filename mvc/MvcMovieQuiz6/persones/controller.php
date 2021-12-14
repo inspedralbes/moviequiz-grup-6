@@ -14,7 +14,7 @@ class controller {
   public function handler () {
     
     $uri = $_SERVER['REQUEST_URI'];
-    echo $uri;
+    //echo $uri;
     $event = 'inici';
     foreach ($this->peticions as $peticio)
       if (strpos($uri,$peticio) == true)
