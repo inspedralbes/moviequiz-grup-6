@@ -10,6 +10,6 @@
   $controller->handler();
 
 ?>
-<script src="index.js"></script>
+
 
 
