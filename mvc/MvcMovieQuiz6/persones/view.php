@@ -24,7 +24,7 @@ class view {
 public function retornar_vista ($vista, $dades=array(), $message="Benvingut a la pagina Web") {
 	
 	// the main template is read (menu, message and the main body (a form or select result)
-	$html = file_get_contents(__DIR__ . '/../site_media/html/persones_template.html');
+	$html = file_get_contents(__DIR__ . '/../site_media/html/form_template.html');
 	
 	// subtitle of the page is writen 
 	$html = str_replace('{subtitle}', $this->diccionari['subtitle'][$vista], $html);

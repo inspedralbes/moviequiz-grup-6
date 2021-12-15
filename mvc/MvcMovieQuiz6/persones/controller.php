@@ -59,9 +59,9 @@ class controller {
 
       case 'inici':
         $view->retornar_vista($event, array());
-        
+        break;
               
-        }
+    }
       
   }
   //verifica les dades del $_POST
