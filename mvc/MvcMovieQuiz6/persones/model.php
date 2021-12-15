@@ -70,7 +70,7 @@ class usuari extends DBAbstractModel {
         foreach ($user_data as $field => $value)
           $$field = $value;
         $this->query="INSERT INTO usuari( nom, contrasena)
-                      VALUES ( '$nom', '$contrasena')";
+          VALUES ( '$nom', '$contrasena')";
         $this->execute_single_query();
         $this->message = "Usuari inserit amb èxit";
       } else $this->message = "Usuari ja existent";

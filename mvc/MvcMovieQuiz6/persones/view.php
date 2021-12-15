@@ -33,20 +33,7 @@ public function retornar_vista ($vista, $dades=array(), $message="Benvingut a la
 	$html = str_replace('{message}', $message, $html);
 	
 	// the HTML table with the select result is built 
-	if ($vista=='view1' || $vista=='view2' || ($vista=='view_select' && count($dades)>0)) {
-		
-		// the view template is read and its contents is included in the main template
-		$view = file_get_contents(__DIR__ . '/../site_media/html/view_template.html');
-		$html = str_replace ('{main}', $view, $html);
-		
-		// the table header is built and writen on the template
-		$capçalera = $this->buildHeader ($vista);
-		$html = str_replace('{capçalera}', $capçalera,$html);
-		
-		// the table contents is built and writen on the template
-		$contingut = $this->buildContents ($dades);
-		$html = str_replace('{contingut}', $contingut, $html);
-	}
+	
 	
 	 
 	if ($vista=='inici' || ($vista=='view_select' && count($dades)==0) || $vista=='view_insert')
