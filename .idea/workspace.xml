@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ffc2d3e-ca97-43c0-884b-3e951bdf8226" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/persones/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/persones/model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/site_media/html/persones_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/site_media/html/persones_template.html" afterDir="false" />
-    </list>
+    <list default="true" id="7ffc2d3e-ca97-43c0-884b-3e951bdf8226" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
