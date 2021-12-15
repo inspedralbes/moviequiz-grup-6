@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ffc2d3e-ca97-43c0-884b-3e951bdf8226" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/persones/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/persones/controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/persones/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/persones/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/site_media/html/form_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/site_media/html/form_template.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +19,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="22Dw6yvU79KrJzde1Nmv55PReak" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />

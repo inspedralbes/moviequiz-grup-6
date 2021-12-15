@@ -14,7 +14,7 @@ document.getElementById("btnSearch").addEventListener("click", function(){
                             <img src="${datos.Poster}" class="style_img z-depth-5">
                             <span class="card-title">${datos.Title}</span>
                            
-                            <a id="btn-modal" class="btn-floating halfway-fab  waves-effect waves-light blue  modal-trigger" href="#modal${i}"><i class="material-icons">+</i></a>
+                            <a id="btn-modal" class="btn-floating halfway-fab  waves-effect waves-light blue  modal-trigger" href="#modal${i}"><i class="material-icons">add</i></a>
                         </div>
                     </div>
                     <div id="modal${i}" class="modal bottom-sheet">
@@ -24,7 +24,8 @@ document.getElementById("btnSearch").addEventListener("click", function(){
                             <div>
                                 <label>
                                     <input type="checkbox" id="fav" name="fav"/>
-                                    <span>Marcar com favorit <3</span>
+                                    <i class="material-icons">favorite</i>
+                                    <span>Marcar com favorit</span>
                                 </label>
                             </div>
                             <div id="formValue">

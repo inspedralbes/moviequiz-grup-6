@@ -69,14 +69,21 @@ class controller {
     
     if($_POST) {
       
-      if(array_key_exists("id",$_POST))
+      if(array_key_exists("id",$_POST)){
         $user_data['id'] = $_POST['id'];
+      }
      
-      if(array_key_exists("nom",$_POST))
+      if(array_key_exists("nom",$_POST)){
         $user_data['nom'] = $_POST['nom'];
-        
-      if(array_key_exists("contrasena",$_POST))
+      }
+
+      if(array_key_exists("contrasena",$_POST)){
         $user_data['contrasena'] = $_POST['contrasena'];
+      }
+
+      if(array_key_exists("email",$_POST)){
+      $user_data['email'] = $_POST['email'];
+      }
     }
     
     return $user_data;

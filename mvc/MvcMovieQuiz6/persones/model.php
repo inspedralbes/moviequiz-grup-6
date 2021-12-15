@@ -8,6 +8,7 @@ class usuari extends DBAbstractModel {
   private $id;
   private $nom;
   private $contrasena;
+  private $email;
  // private $puntuacio;
 
   public $message;
@@ -18,7 +19,7 @@ class usuari extends DBAbstractModel {
   
   function __toString() {
     echo "entro string <br>";
-    return "(" . $this->id . ", " . $this->nom . ", " . $this->contrasena  . ")";
+    return "(" . $this->id . ", " . $this->nom . ", " . $this->contrasena  . ", " . $this->email .")";
   }
   
   function __destruct() {
@@ -46,7 +47,7 @@ class usuari extends DBAbstractModel {
   
   public function select($nom="") {
    
-      $this->query = "SELECT id, nom, contrasena
+      $this->query = "SELECT id, nom, contrasena, email
                     FROM usuari
                     WHERE nom='$nom'";
       $this->get_results_from_query();
@@ -65,17 +66,20 @@ class usuari extends DBAbstractModel {
   public function insert($user_data = array()) {
     
     if (array_key_exists("nom", $user_data)) {
-      $this->select($user_data["nom"]);
-      if ($user_data["nom"]!= $this->nom) {
-        foreach ($user_data as $field => $value)
-          $$field = $value;
-        $this->query="INSERT INTO usuari( nom, contrasena)
-          VALUES ( '$nom', '$contrasena')";
+
+
+      $nom = $user_data["nom"];
+      $contrasena = $user_data["contrasena"];
+      //$passHash = password_hash($contrasena, PASSWORD_BCRYPT);
+      $email = $user_data["email"];
+
+        $this->query="INSERT INTO usuari(nom, contrasena, email)
+          VALUES ('$nom', '$contrasena', '$email')";
         $this->execute_single_query();
         $this->message = "Usuari inserit amb èxit";
-      } else $this->message = "Usuari ja existent";
-    } else $this->message = "Usuari no inserit";
+      
   }
+}
   
   public function update ($userData = array()) {
    
