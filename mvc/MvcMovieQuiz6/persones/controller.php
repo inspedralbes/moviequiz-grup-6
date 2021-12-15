@@ -8,8 +8,8 @@ class controller {
   //rutes o esdeveniments
   //view1: nom i edat
   //view2: nom i alçada
-  private $peticions = array('view1', 'view2', 'view_select', 'form_select',
-                             'view_insert', 'form_insert');
+  private $peticions = array('view1', 'view2', 'view_login', 'form_login',
+                             'view_register', 'form_register');
   
   public function handler () {
     
@@ -37,23 +37,23 @@ class controller {
           $view->retornar_vista($event, $dades);
           break;
         
-        case 'view_select':
+        case 'view_login':
           $user_data = $this->read_user_data();
           $dades = $per->select($user_data["nom"]);
           $view->retornar_vista($event, $dades, $per->message);
           break;
 
-        case 'form_select':
+        case 'form_login':
           $view->retornar_vista($event,array());
           break;
         
-        case 'view_insert':
+        case 'view_register':
           $user_data = $this->read_user_data();
           $dades = $per->insert($user_data);
           $view->retornar_vista($event, array(), $per->message);
           break;
 
-        case 'form_insert':
+        case 'form_register':
           $view->retornar_vista($event,array());
           break;
 

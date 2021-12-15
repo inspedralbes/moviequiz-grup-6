@@ -6,19 +6,19 @@ class view {
     'subtitle' => array ('inici' => 'Buscar persona',
                          'view1' => 'Mostrar dades nom i edat',
                          'view2' => 'Mostrar dades nom i alcada',
-                         'view_select' => 'Dades persona',
-                         'form_select' => 'Buscar persona',
-                         'view_insert' => 'Dades inserides',
-                         'form_insert' => 'Inserir persona'),
+                         'view_login' => 'Dades logeadas',
+                         'form_login' => 'Logear persona',
+                         'view_register' => 'Dades inserides',
+                         'form_register' => 'Inserir persona'),
     'capçalera' => array ('view1' => array('nom','contrasena'),
                          'view2' => array('nom','contrasena'),
-                         'view_select' => array('id','nom','contrasena')),
-    'form' => array ('form_select' => array('nom'),
-                     'form_insert' => array('nom','contrasena')),
-    'action' => array('form_select' => 'index.php?action=view_select',
-                     'form_insert' => 'index.php?action=view_insert'),
-    'butaction' => array('form_select' => 'buscar',
-                        'form_insert' => 'inserir'));
+                         'view_login' => array('id','nom','contrasena')),
+    'form' => array ('form_login' => array('nom'),
+                     'form_register' => array('nom','contrasena')),
+    'action' => array('form_login' => 'index.php?action=view_login',
+                     'form_register' => 'index.php?action=view_register'),
+    'butaction' => array('form_login' => 'logearse',
+                        'form_register' => 'inserir'));
   
 
 public function retornar_vista ($vista, $dades=array(), $message="Benvingut a la pagina Web") {
@@ -36,10 +36,10 @@ public function retornar_vista ($vista, $dades=array(), $message="Benvingut a la
 	
 	
 	 
-	if ($vista=='inici' || ($vista=='view_select' && count($dades)==0) || $vista=='view_insert')
-		$vista='form_select';
+	if ($vista=='inici' || ($vista=='view_login' && count($dades)==0) || $vista=='view_register')
+		$vista='form_login';
 
-	if ($vista=='form_select' || $vista=='form_insert') {
+	if ($vista=='form_login' || $vista=='form_register') {
 		
 
 		$form = file_get_contents(__DIR__ . '/../site_media/html/form_template.html');
