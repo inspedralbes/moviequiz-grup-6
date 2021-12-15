@@ -26,36 +26,35 @@ class controller {
     
     switch ($event) {
         
-        
-        case 'view1':
-          $dades = $per->selectAll(array("nom","edat"));
-          $view->retornar_vista($event, $dades);
-          break;
-        
-        case 'view2':
-          $dades = $per->selectAll(array("nom","alcada"));
-          $view->retornar_vista($event, $dades);
-          break;
-        
-        case 'view_login':
-          $user_data = $this->read_user_data();
-          $dades = $per->select($user_data["nom"]);
-          $view->retornar_vista($event, $dades, $per->message);
-          break;
+      case 'view1':
+        $dades = $per->selectAll(array("nom","edat"));
+        $view->retornar_vista($event, $dades);
+        break;
+      
+      case 'view2':
+        $dades = $per->selectAll(array("nom","alcada"));
+        $view->retornar_vista($event, $dades);
+        break;
+      
+      case 'view_login':
+        $user_data = $this->read_user_data();
+        $dades = $per->login();
+        $view->retornar_vista($event, $dades, $per->message);
+        break;
 
-        case 'form_login':
-          $view->retornar_vista($event,array());
-          break;
-        
-        case 'view_register':
-          $user_data = $this->read_user_data();
-          $dades = $per->insert($user_data);
-          $view->retornar_vista($event, array(), $per->message);
-          break;
+      case 'form_login':
+        $view->retornar_vista($event,array());
+        break;
+      
+      case 'view_register':
+        $user_data = $this->read_user_data();
+        $dades = $per->insert($user_data);
+        $view->retornar_vista($event, array(), $per->message);
+        break;
 
-        case 'form_register':
-          $view->retornar_vista($event,array());
-          break;
+      case 'form_register':
+        $view->retornar_vista($event,array());
+        break;
 
       case 'inici':
         $view->retornar_vista($event, array());

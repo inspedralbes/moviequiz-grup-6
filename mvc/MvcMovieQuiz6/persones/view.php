@@ -13,8 +13,8 @@ class view {
     'capçalera' => array ('view1' => array('nom','contrasena'),
                          'view2' => array('nom','contrasena'),
                          'view_login' => array('id','nom','contrasena')),
-    'form' => array ('form_login' => array('nom'),
-                     'form_register' => array('nom','contrasena')),
+    'form' => array ('form_login' => array('nom', 'contrasenya'),
+                     'form_register' => array('nom','contrasenya')),
     'action' => array('form_login' => 'index.php?action=view_login',
                      'form_register' => 'index.php?action=view_register'),
     'butaction' => array('form_login' => 'logearse',
@@ -82,10 +82,15 @@ private function buildContents ($dades) {
 
 private function buildForm ($vista) {
 	$str = "";
+	$i=0;
 	foreach ($this->diccionari['form'][$vista] as $value) {
-	
-		$str .= "<div> $value </div>";
-		$str .= "<div><input type='text' name='$value' id='$value'></div>";	
+		$str .= "<div class=$i> $value </div>";
+		if($i==1){
+			$str .= "<div><input type='password' name='$value' id='$value'></div>";	
+		}else{
+			$str .= "<div><input type='text' name='$value' id='$value'></div>";	
+		}
+		$i++;
 	}	
 	return $str;
 	}
