@@ -8,7 +8,7 @@ class controller {
   //rutes o esdeveniments
   //view1: nom i edat
   //view2: nom i alçada
-  private $peticions = array('view1', 'view2', 'view_select', 'form_select',
+  private $peticions = array('view_select', 'form_select',
                              'view_insert', 'form_insert');
   
   public function handler () {
@@ -26,42 +26,31 @@ class controller {
     
     switch ($event) {
         
-        
-        case 'view1':
-          $dades = $per->selectAll(array("nom","edat"));
-          $view->retornar_vista($event, $dades);
-          break;
-        
-        case 'view2':
-          $dades = $per->selectAll(array("nom","alcada"));
-          $view->retornar_vista($event, $dades);
-          break;
-        
-        case 'view_select':
-          $user_data = $this->read_user_data();
-          $dades = $per->select($user_data["nom"]);
-          $view->retornar_vista($event, $dades, $per->message);
-          break;
+      case 'view_select':
+        $user_data = $this->read_user_data();
+        $dades = $per->select($user_data["nom"]);
+        $view->retornar_vista($event, $dades, $per->message);
+        break;
 
-        case 'form_select':
-          $view->retornar_vista($event,array());
-          break;
-        
-        case 'view_insert':
-          $user_data = $this->read_user_data();
-          $dades = $per->insert($user_data);
-          $view->retornar_vista($event, array(), $per->message);
-          break;
+      case 'form_select':
+        $view->retornar_vista($event,array());
+        break;
+      
+      case 'view_insert':
+        $user_data = $this->read_user_data();
+        $dades = $per->insert($user_data);
+        $view->retornar_vista($event, array(), $per->message);
+        break;
 
-        case 'form_insert':
-          $view->retornar_vista($event,array());
-          break;
+      case 'form_insert':
+        $view->retornar_vista($event,array());
+        break;
 
       case 'inici':
         $view->retornar_vista($event, array());
-        
+        break;
               
-        }
+    }
       
   }
   //verifica les dades del $_POST
