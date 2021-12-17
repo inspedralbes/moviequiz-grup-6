@@ -9,7 +9,7 @@
 
     if($_POST['contrasenya'] == $usuario[0]['contrasenya']) {
       session_start();
-      $arr = array('exito' => true, 'nom' => $usuario[0]['nom'], "apellido" => $usuario[0]['apellido'], "correo" => $usuario[0]['correo']);
+      $arr = array('exito' => true, 'nom' => $usuario[0]['nom']);
       $_SESSION['usuario'] = $arr;
       $myJSON = json_encode($arr);
       echo $myJSON;
