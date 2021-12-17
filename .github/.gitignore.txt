@@ -1,0 +1,3 @@
+Nom BBDD: a20valzavvas_moviequiz6
+usuari: a20valzavvas_admin
+contraseña: QweasD678*
