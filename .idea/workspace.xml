@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ffc2d3e-ca97-43c0-884b-3e951bdf8226" name="Changes" comment="" />
+    <list default="true" id="7ffc2d3e-ca97-43c0-884b-3e951bdf8226" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/persones/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/persones/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/site_media/html/index.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +30,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/mvc" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
