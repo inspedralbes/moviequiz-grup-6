@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ffc2d3e-ca97-43c0-884b-3e951bdf8226" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/site_media/html/form_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/MvcMovieQuiz6/site_media/html/form_template.html" afterDir="false" />
-    </list>
+    <list default="true" id="7ffc2d3e-ca97-43c0-884b-3e951bdf8226" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +51,7 @@
       <workItem from="1639398279958" duration="230000" />
       <workItem from="1639398512854" duration="290000" />
       <workItem from="1639466799124" duration="2624000" />
+      <workItem from="1639733934781" duration="9000" />
     </task>
     <servers />
   </component>
