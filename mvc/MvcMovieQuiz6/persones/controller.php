@@ -77,8 +77,8 @@ class controller {
         $user_data['nom'] = $_POST['nom'];
       }
 
-      if(array_key_exists("contrasena",$_POST)){
-        $user_data['contrasena'] = $_POST['contrasena'];
+      if(array_key_exists("contrasenya",$_POST)){
+        $user_data['contrasenya'] = $_POST['contrasenya'];
       }
 
       if(array_key_exists("email",$_POST)){

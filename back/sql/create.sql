@@ -55,7 +55,7 @@ CREATE TABLE `puntuacio` (
 CREATE TABLE `usuari` (
   `id` int(30) NOT NULL,
   `nom` varchar(15) NOT NULL,
-  `contrasena` varchar(15) NOT NULL,
+  `contrasenya` varchar(15) NOT NULL,
   `email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -63,7 +63,7 @@ CREATE TABLE `usuari` (
 -- Bolcament de dades per a la taula `usuari`
 --
 
-INSERT INTO `usuari` (`id`, `nom`, `contrasena`, `email`) VALUES
+INSERT INTO `usuari` (`id`, `nom`, `contrasenya`, `email`) VALUES
 (33, 'user1', '12345', 'a20mohwafche@inspedralbes.cat'),
 (34, 'valeria', '12356', 'a20mohwafche@inspedralbes.cat'),
 (35, 'cheryl', '12345', 'a20valzavvas@inspedralbes.cat');

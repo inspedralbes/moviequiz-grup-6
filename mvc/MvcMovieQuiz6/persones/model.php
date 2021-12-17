@@ -7,7 +7,7 @@ class usuari extends DBAbstractModel {
   
   private $id;
   private $nom;
-  private $contrasena;
+  private $contrasenya;
   private $email;
  // private $puntuacio;
 
@@ -19,7 +19,7 @@ class usuari extends DBAbstractModel {
   
   function __toString() {
     echo "entro string <br>";
-    return "(" . $this->id . ", " . $this->nom . ", " . $this->contrasena  . ", " . $this->email .")";
+    return "(" . $this->id . ", " . $this->nom . ", " . $this->contrasenya  . ", " . $this->email .")";
   }
   
   function __destruct() {
@@ -47,7 +47,7 @@ class usuari extends DBAbstractModel {
   
   public function select($nom="") {
    
-      $this->query = "SELECT id, nom, contrasena, email
+      $this->query = "SELECT id, nom, contrasenya, email
                     FROM usuari
                     WHERE nom='$nom'";
       $this->get_results_from_query();
@@ -69,12 +69,12 @@ class usuari extends DBAbstractModel {
 
 
       $nom = $user_data["nom"];
-      $contrasena = $user_data["contrasena"];
-      //$passHash = password_hash($contrasena, PASSWORD_BCRYPT);
+      $contrasenya = $user_data["contrasenya"];
+      //$passHash = password_hash($contrasenya, PASSWORD_BCRYPT);
       $email = $user_data["email"];
 
-        $this->query="INSERT INTO usuari(nom, contrasena, email)
-          VALUES ('$nom', '$contrasena', '$email')";
+        $this->query="INSERT INTO usuari(nom, contrasenya, email)
+          VALUES ('$nom', '$contrasenya', '$email')";
         $this->execute_single_query();
         $this->message = "Usuari inserit amb èxit";
       
