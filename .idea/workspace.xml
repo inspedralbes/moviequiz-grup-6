@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7ffc2d3e-ca97-43c0-884b-3e951bdf8226" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/sql/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/back/sql/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/sql/insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/back/sql/insert.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc/model.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/view.php" afterDir="false" />
     </list>
