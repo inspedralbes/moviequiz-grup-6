@@ -86,19 +86,19 @@ class usuari extends DBAbstractModel {
       $user2 = new usuari();
       $usuario = $user2->select($comp["nom"]);
 
-      if($_POST['contrasenya'] == $usuario[0]['contrasenya']) {
+      if($_POST['contrasenya'] == $usuario['contrasenya']) {
         session_start();
-        $arr = array($usuario[0]['nom']);
+        $arr = array($usuario['nom']);
         $_SESSION['usuario'] = $arr;
         $myJSON = json_encode($arr);
         echo  "Bienvenido $myJSON";
       }
-      else {
-        session_start();
-        $arr = array('exito' => false, 'correo' => $usuario[0]['correo'], "contrasenya" => $usuario[0]['contrasenya']);
-        $myJSON = json_encode($arr);
-        echo $myJSON;
-      }
+      // else {
+      //   session_start();
+      //   $arr = array('exito' => false, "contrasenya" => $usuario[0]['contrasenya']);
+      //   $myJSON = json_encode($arr);
+      //   //echo $myJSON;
+      // }
     }
     else echo "No funciona";
   }

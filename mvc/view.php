@@ -24,7 +24,7 @@ class view {
 public function retornar_vista ($vista, $dades=array(), $message="Benvingut a la pagina Web") {
 	
 	// the main template is read (menu, message and the main body (a form or select result)
-	$html = file_get_contents('C:\Users\Mati\Documents\GitHub\moviequiz-grup-6\index.html');
+	$html = file_get_contents('D:\Documentos\GitHub\moviequiz-grup-6\index.html');
 	
 	// subtitle of the page is writen 
 	$html = str_replace('{subtitle}', $this->diccionari['subtitle'][$vista], $html);
@@ -42,7 +42,7 @@ public function retornar_vista ($vista, $dades=array(), $message="Benvingut a la
 	if ($vista=='form_login' || $vista=='form_register') {
 		
 
-		$form = file_get_contents('C:\Users\Mati\Documents\GitHub\moviequiz-grup-6\index.html');
+		$form = file_get_contents('D:\Documentos\GitHub\moviequiz-grup-6\index.html');
 		$html = str_replace('{main}', $form, $html);
 		
 
