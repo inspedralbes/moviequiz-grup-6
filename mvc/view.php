@@ -36,7 +36,7 @@ public function retornar_vista ($vista, $dades=array(), $message="Benvingut a la
 	
 	
 	 
-	if ($vista=='inici' || ($vista=='view_login' && count($dades)==0) || $vista=='view_register')
+	if ($vista=='inici' ||$vista=='view_login' || $vista=='view_register')
 		$vista='form_login';
 	
 	if ($vista=='form_login' || $vista=='form_register') {
