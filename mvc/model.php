@@ -69,7 +69,9 @@ class usuari extends DBAbstractModel {
 
 
       $nom = $user_data["nom"];
-      $contrasenya = $user_data["contrasenya"];
+      $contrasenya=$user_data["contrasenya"];
+      $contrasenya =  password_hash ($contrasenya, PASSWORD_BCRYPT);
+     
       //$passHash = password_hash($contrasenya, PASSWORD_BCRYPT);
       $email = $user_data["email"];
 
@@ -93,12 +95,7 @@ class usuari extends DBAbstractModel {
         $myJSON = json_encode($arr);
         echo  "Bienvenido $myJSON";
       }
-      else {
-        session_start();
-        $arr = array('exito' => false, 'correo' => $usuario[0]['correo'], "contrasenya" => $usuario[0]['contrasenya']);
-        $myJSON = json_encode($arr);
-        echo $myJSON;
-      }
+
     }
     else echo "No funciona";
   }
