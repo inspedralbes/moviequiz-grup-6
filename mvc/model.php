@@ -69,7 +69,9 @@ class usuari extends DBAbstractModel {
 
 
       $nom = $user_data["nom"];
-      $contrasenya = $user_data["contrasenya"];
+      $contrasenya=$user_data["contrasenya"];
+      $contrasenya =  password_hash ($contrasenya, PASSWORD_BCRYPT);
+     
       //$passHash = password_hash($contrasenya, PASSWORD_BCRYPT);
       $email = $user_data["email"];
 
