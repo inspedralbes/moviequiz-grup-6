@@ -93,7 +93,13 @@ class usuari extends DBAbstractModel {
         $myJSON = json_encode($arr);
         echo  "Bienvenido $myJSON";
       }
-
+      else {
+        session_start();
+        $arr = array('exito' => false, "contrasenya" => $usuario[0]['contrasenya']);
+        $myJSON = json_encode($arr);
+         echo $myJSON;
+        echo "datos incorrectos";
+      }
     }
     else echo "No funciona";
   }
