@@ -60,19 +60,6 @@ CREATE TABLE `usuari` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Bolcament de dades per a la taula `usuari`
---
-
-INSERT INTO `usuari` (`id`, `nom`, `contrasenya`, `email`) VALUES
-(33, 'user1', '12345', 'a20mohwafche@inspedralbes.cat'),
-(34, 'valeria', '12356', 'a20mohwafche@inspedralbes.cat'),
-(35, 'cheryl', '12345', 'a20valzavvas@inspedralbes.cat');
-
---
--- Índexs per a les taules bolcades
---
-
---
 -- Índexs per a la taula `peli`
 --
 ALTER TABLE `peli`
