@@ -16,12 +16,11 @@
 	<section class="container">
 		<div class="row">
 			<br>
-			<header>
-				<section id="menu" class="col s12">
-					<a href="./index.php?action=form_login"><button id="btn-login" class="btn-popup waves-effect waves-teal btn-flat"><i class="material-icons left">person</i>Login</button></a>
-					<a href="./index.php?action=form_register"><button id="btn-registrar" class="btn-popup waves-effect waves-teal btn-flat">Registrar<i class="material-icons left">person_add</i></button></a>
-				</section>
-			</header>
+			<section id="menu" class="col s12">
+				<a href="./index.php?action=form_login"><button id="btn-login" class="btn-popup waves-effect waves-teal btn-flat"><i class="material-icons left">person</i>Login</button></a>
+				<a href="./index.php?action=form_register"><button id="btn-registrar" class="btn-popup waves-effect waves-teal btn-flat">Registrar<i class="material-icons left">person_add</i></button></a>
+			</section>
+			
 			<article>
 				<div id="divSearch" class="col s9">
 					<img src="/img/logo_umovie.png" alt="umovie" id="logo" class="col s6">
@@ -35,7 +34,7 @@
 				<div class="col s3" id="divLogin">					
 					<form action="{action}" method="POST">
 						{formbody}
-						<div><input type="submit" id="{butaction}" value="Login" class="waves-effect waves-light btn"></div>
+						<div class="right-align"><input type="submit" id="btnLogin" value="Login" class="waves-effect waves-light btn"></div>
 					</form>
 				</div>
 				<br>			
@@ -45,6 +44,17 @@
 					
 				</div>
 			</article>
+
+			<article>
+				<div class="carousel center">
+					<a class="carousel-item" href="#one!"><img src="https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg"></a>
+					<a class="carousel-item" href="#two!"><img src="https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"></a>
+					<a class="carousel-item" href="#three!"><img src="https://m.media-amazon.com/images/M/MV5BZTJmNTZlZWUtZTQ2Yi00YTFjLWFiNzctYzFlNmZmZGMzYTlmXkEyXkFqcGdeQXVyMjQ2MTk1OTE@._V1_SX300.jpg"></a>
+					<a class="carousel-item" href="#four!"><img src="https://m.media-amazon.com/images/M/MV5BMTYyOTAxMDA0OF5BMl5BanBnXkFtZTcwNzgwNTc1NA@@._V1_SX300.jpg"></a>
+					<a class="carousel-item" href="#five!"><img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"></a>
+				  </div>
+			</article>
+			
 		</div>
 	</section>
 	

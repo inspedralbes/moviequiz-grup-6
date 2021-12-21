@@ -9,7 +9,7 @@ document.getElementById("btnSearch").addEventListener("click", function(){
     for(i=0; i<10; i++){
         datos = data.Search[i];
         pelis += `<div class="col s12 m6 l3">
-                    <div class="card">
+                    <div class="card hoverable">
                         <div class="card-image">
                             <img src="${datos.Poster}" class="style_img z-depth-5">
                             <span class="card-title">${datos.Title}</span>
@@ -74,10 +74,33 @@ document.getElementById("btnSearch").addEventListener("click", function(){
 
 });
 
-document.getElementById("btnLogin").addEventListener("click", function(){
-    let u = document.getElementById("username").value;
-    let p = document.getElementById("pwd").value;
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {
+        indicators : true,
+    });
+    let indicatorItems = document.querySelectorAll('.carousel .indicator-item'),
+      slideTime = 3000,
+      activeClass = "active";
 
+  setInterval(() => {
+    indicatorItems.forEach(el => {
+      if (el.classList.contains(activeClass)) {
+        sib = el.nextElementSibling;
+        if (sib == null) {
+          indicatorItems[0].click();
+        } else {
+          sib.click()
+        }
+      }
+    });
+  }, slideTime);
+});
+
+document.getElementById("btnLogin").addEventListener("click", function(){
+    let u = document.getElementById("usuario").value;
+    let p = document.getElementById("contrasenya").value;
+    console.log("aa");
     const datosEnvio = new FormData();
 
     datosEnvio.append('username', u);
@@ -102,7 +125,7 @@ document.getElementById("btnLogin").addEventListener("click", function(){
             alert("Usuari o contrasenya incorrecta");
         }else{
             document.getElementById("divSearch").style.display="block";
-            document.getElementById("divLogin").style.display="none";
+            document.getElementById("divLogin").classList.add("oculto");
         }
         
     })

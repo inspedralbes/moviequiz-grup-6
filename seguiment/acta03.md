@@ -2,6 +2,6 @@
 
 # FUNCIONALITATS
 ## -Login funcionant
-## -Afegir pel·licules 
-## -Carrousel amb les ultimes 5 pel·licules afegides
-## -Acabar disseny de la pagina
+## -Acabar disseny de la pagina 
+## -Carousel amb les ultimes 5 pel·licules afegides
+## -Afegir pel·licules

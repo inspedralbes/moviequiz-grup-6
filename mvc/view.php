@@ -17,7 +17,7 @@ class view {
                      'form_register' => array('nom','contrasenya', 'email')),
     'action' => array('form_login' => 'index.php?action=view_login',
                      'form_register' => 'index.php?action=view_register'),
-    'butaction' => array('form_login' => 'logearse',
+    'btnLogin' => array('form_login' => 'logearse',
                         'form_register' => 'inserir'));
   
 
@@ -52,7 +52,7 @@ public function retornar_vista ($vista, $dades=array(), $message="Benvingut a la
 
 		$formbody = $this->buildForm($vista);
 		$html = str_replace('{formbody}', $formbody, $html);
-		$html = str_replace('{butaction}',$this->diccionari['butaction'][$vista], $html);
+		$html = str_replace('{btnLogin}',$this->diccionari['btnLogin'][$vista], $html);
 	}
 	
 
