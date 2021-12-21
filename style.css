@@ -12,7 +12,13 @@ body{
 }
 
 #logo{
-    width: 280px;
-    height: 110px;
+    width: 170px;
 }
-
+footer {
+    z-index:1;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    
+    width:100%;
+  }

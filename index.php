@@ -9,6 +9,7 @@
 
   $controller->handler();
 
+  include('footer.php'); 
 ?>
 
 
