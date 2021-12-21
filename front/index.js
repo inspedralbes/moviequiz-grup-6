@@ -1,3 +1,9 @@
+//Arranquem el modal
+document.addEventListener('DOMContentLoaded', function(){
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems,{});
+})
+
 document.getElementById("btnSearch").addEventListener("click", function(){
     let nombre= document.getElementById("search").value;
     fetch(`https://www.omdbapi.com/?apikey=e4fb6781&s=${nombre}`).then(function(res) {
@@ -62,8 +68,8 @@ document.getElementById("btnSearch").addEventListener("click", function(){
                         
                     </div>
                  </div>`;
-    }
-    document.getElementById("items").innerHTML=pelis;
+        }
+        document.getElementById("items").innerHTML=pelis;
 
         var elems = document.querySelectorAll('.modal');
         var instances = M.Modal.init(elems,{});
@@ -95,6 +101,57 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }, slideTime);
 });
+
+document.getElementById("juego").addEventListener("click",function(){
+
+    fetch("./front/output_json.json")
+        .then(response => response.json() )
+        .then(data => {
+            console.log(data);
+
+            let preguntes="";
+
+            for (let i = 0; i < 5; i++) {
+
+                preguntes += `
+  
+                <div>
+                    <h3>${data.peliculas[i].Nombre}</h3>
+                    <img src='${data.peliculas[i].Poster}' width="300px">
+                    <div>
+                         <div>
+                            <br>
+                            <label>
+                                <input name="i" type="radio" value="${data.peliculas[i].choice1}" id="${data.peliculas[i].choice1}"/>
+                                <span>${data.peliculas[i].choice1}</span>
+                            </label>
+                            <label> 
+                                <input name="i" type="radio" value="${data.peliculas[i].choice2}" id="${data.peliculas[i].choice2}"/>
+                                <span>${data.peliculas[i].choice2}</span>
+                            </label>
+                            <label>
+                                <input name="i" type="radio" value="${data.peliculas[i].choice3}" id="${data.peliculas[i].choice3}"/>
+                                <span>${data.peliculas[i].choice3}</span>
+                            </label>
+                            <label>  
+                                <input name="i" type="radio" value="${data.peliculas[i].choice4}" id="${data.peliculas[i].choice4}"/>
+                                <span>${data.peliculas[i].choice4}</span>
+                            </label>  
+                        </div>
+                    </form>
+                    </div>
+                </div><br/><br/> 
+                `;
+            };
+            document.getElementById("preguntes").innerHTML = preguntes;
+
+/*
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems,{});*/
+            
+        });
+});
+
 
 /*document.getElementById("btnLogin").addEventListener("click", function(){
     let u = document.getElementById("usuario").value;

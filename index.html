@@ -15,26 +15,36 @@
 <body>
 	<section class="container">
 		<div class="row">
+			<!-- menu  -->
 			<nav>
 				<div class="nav-wrapper grey darken-1">
 				  <a href="#" class="brand-logo"><img src="/img/logo_cam.png" alt="umovie" id="logo" class="col s6">UMovie</a>
 				  <ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><a href="./index.php?action=form_login"><i class="material-icons left">person</i>Login</a></li>
 					<li><a href="./index.php?action=form_register"><i class="material-icons left">person_add</i>Registrar</a></li>
-					<li><a href="collapsible.html"><i class="material-icons left">gamepad</i>Jugar</a></li>
+					<li><a class="modal-trigger" href="#juegoModal" id="juego"><i class="material-icons left">gamepad</i>Jugar</a></li>
 				  </ul>
 				</div>
 			  </nav>
 			<br>
-			<!-- <section id="menu" class="col s12">
-				<a href="./index.php?action=form_login"><button id="btn-login" class="btn-popup waves-effect waves-teal btn-flat"><i class="material-icons left">person</i>Login</button></a>
-				<a href="./index.php?action=form_register"><button id="btn-registrar" class="btn-popup waves-effect waves-teal btn-flat">Registrar<i class="material-icons left">person_add</i></button></a>
-			</section> -->
 			
+			<!-- modal joc pelis -->
+			<div>
+				<div id="juegoModal" class="modal modal-fixed-footer">
+				   <div class="modal-content">
+					  <div id="preguntes">
+			 
+					  </div>
+				   </div>
+				   <div class="modal-footer">
+					  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Enviar</a>
+				   </div>
+				</div>
+			</div>
+
+			<!-- buscar pelis -->
 			<article>
 				<div id="divSearch" class="col s9">
-					<!-- <img src="/img/logo_umovie.png" alt="umovie" id="logo" class="col s6">
-					<h1 class="col s6">UMovie</h1> -->
 					<label for="nompeli" class="col s12">Escriu el nom de la pel·licula que vulguis trobar: </label><br><br>
 					<input type="text" id="search" name="text" value="">
 					<button id="btnSearch" class="waves-effect waves-light btn">Buscar</button>
@@ -55,6 +65,7 @@
 				</div>
 			</article>
 
+			<!-- carousel -->
 			<article>
 				<div class="carousel center">
 					<a class="carousel-item" href="#one!"><img src="https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg"></a>
@@ -67,8 +78,8 @@
 			
 		</div>
 	</section>
-	
 
+	
 	<script src="../../../../front/index.js"></script>
 </body>
 </html>
