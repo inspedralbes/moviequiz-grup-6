@@ -18,17 +18,16 @@ document.getElementById("btnSearch").addEventListener("click", function(){
                         </div>
                     </div>
                     <div id="modal${i}" class="modal bottom-sheet">
-                        <div class="modal-content">
+                        <div class="modal-content center-align">
                             <h4 class="center-align cyan-text text-darken-3">${datos.Title} (${datos.Year})</h4>
                             </br>
-                            <div>
+                            <div class="center-align">
                                 <label>
                                     <input type="checkbox" id="fav" name="fav"/>
-                                    <i class="material-icons">favorite</i>
                                     <span>Marcar com favorit</span>
                                 </label>
                             </div>
-                            <div id="formValue">
+                            <div id="formValue" class="center-align">
                                 </br>
                                 <h5 class="red-text darken-1">Valoració</h5>
                                 </br>
@@ -53,12 +52,12 @@ document.getElementById("btnSearch").addEventListener("click", function(){
                                     <span>5</span>
                                 </label>
                             </div>
-                            <div class="input-field">
+                            <div class="input-field center-align">
                                 <textarea id="comentario" class="materialize-textarea" data-length="200"></textarea>
                                 <label for="comentario">Comentari</label>
                             </div>
-                            <button id="btn-guardar" class="btn waves-effect waves-light disabled"> Guardar </button>
-                            <!--<div id="divError" class="divError"><label class="error"><span style="font-size: 20px"> ! </span>Debes de iniciar sesión para poder hacer una valoración</label></div>-->
+                            <button id="btn-guardar" class="btn waves-effect waves-light center-align"> Guardar </button>
+                            
                         </div>
                         
                     </div>
@@ -97,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }, slideTime);
 });
 
-document.getElementById("btnLogin").addEventListener("click", function(){
+/*document.getElementById("btnLogin").addEventListener("click", function(){
     let u = document.getElementById("usuario").value;
     let p = document.getElementById("contrasenya").value;
     console.log("aa");
@@ -129,4 +128,4 @@ document.getElementById("btnLogin").addEventListener("click", function(){
         }
         
     })
-});
+});*/

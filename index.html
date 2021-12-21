@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>UMovie</title>
 	<!-- <link rel="shortcut icon" href="moviehub.ico"> -->
-	<link rel="shortcut icon" href="/img/favicon.png">
+	<link rel="shortcut icon" href="/img/logo_cam.ico">
 	<link rel="stylesheet" href="../../../../style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -15,16 +15,26 @@
 <body>
 	<section class="container">
 		<div class="row">
+			<nav>
+				<div class="nav-wrapper grey darken-1">
+				  <a href="#" class="brand-logo"><img src="/img/logo_cam.png" alt="umovie" id="logo" class="col s6">UMovie</a>
+				  <ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="./index.php?action=form_login"><i class="material-icons left">person</i>Login</a></li>
+					<li><a href="./index.php?action=form_register"><i class="material-icons left">person_add</i>Registrar</a></li>
+					<li><a href="collapsible.html"><i class="material-icons left">gamepad</i>Jugar</a></li>
+				  </ul>
+				</div>
+			  </nav>
 			<br>
-			<section id="menu" class="col s12">
+			<!-- <section id="menu" class="col s12">
 				<a href="./index.php?action=form_login"><button id="btn-login" class="btn-popup waves-effect waves-teal btn-flat"><i class="material-icons left">person</i>Login</button></a>
 				<a href="./index.php?action=form_register"><button id="btn-registrar" class="btn-popup waves-effect waves-teal btn-flat">Registrar<i class="material-icons left">person_add</i></button></a>
-			</section>
+			</section> -->
 			
 			<article>
 				<div id="divSearch" class="col s9">
-					<img src="/img/logo_umovie.png" alt="umovie" id="logo" class="col s6">
-					<h1 class="col s6">UMovie</h1>
+					<!-- <img src="/img/logo_umovie.png" alt="umovie" id="logo" class="col s6">
+					<h1 class="col s6">UMovie</h1> -->
 					<label for="nompeli" class="col s12">Escriu el nom de la pel·licula que vulguis trobar: </label><br><br>
 					<input type="text" id="search" name="text" value="">
 					<button id="btnSearch" class="waves-effect waves-light btn">Buscar</button>
